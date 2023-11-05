@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/home.png">
+    <title>Foodie</title>
+    <script src="https://kit.fontawesome.com/d9f0abd257.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="css/parallax.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&family=Mooli&family=Pacifico&family=Poppins:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Croissant+One&family=Mooli&family=Pacifico&family=Poppins:ital@0;1&family=Roboto&display=swap');        
+        body{
+           background-color: #212529;
+           color:white;
+           font-family: 'Courgette', cursive;
+           font-family: 'Croissant One', cursive; 
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+        }
+        .navitext1{
+          color: orange;
+          font-weight: bold;
+          font-size: 26px;
+        }
+
+        .navitext{
+          margin: 5px;
+          font-size: 17px;
+        }
+
+        .navitext2{
+          color: orange;
+          font-weight: bold;
+          font-size: 50px;
+        }
+
+        .home{
+          margin-top: 170px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        .home_img{
+          margin: 5px;
+        }
+
+        .slogan{
+            font-size: 20px;
+            font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive; 
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+        }
+
+        .but{
+          padding: 10px;
+          background-color: orange;
+          border-radius:10px;
+          color: #212529;
+          font-weight: bold;
+          font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive; 
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .but:hover{
+          transform:scale(1.05);
+            transition:all 1.3s ease;
+        }
+
+        .homie{
+          margin-top: 100px;
+        }
+        
+        .homie3{
+          margin-top: 100px;
+         
+        } 
+
+        .img{
+         width:400px;
+         height: 400px;
+        }
+
+        .img1{
+          width:350px;
+         height: 350px;
+        }
+
+        .slogan1{
+          font-size: 20px;
+        }
+
+      
+        .homie2{
+          margin-left: 50px;
+        }
+
+        .home_img1{
+          margin-left:1px;
+        }
+
+        .mbt{
+          margin-bottom: 160px;
+        }
+
+        .navitext3{
+          color: orange;
+          font-weight: bold;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .navitext31{
+          margin-top: 40px;
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+        }
+
+        .navitext312{
+          margin-top: 40px;
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+        }
+
+        .menu{
+          margin-bottom: 110px;
+          margin-top: 70px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .menu1{
+          margin-bottom: 110px;
+          margin-top: 70px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .cards{
+          text-align: center;
+          color:#212529;
+          background-color:whitesmoke;
+          border-radius: 13px;
+          width:360px;
+          height: 320px;
+          margin: 5px;
+          
+        }
+
+       .cardimg1{
+          width: 200px;
+          height: 180px;
+          margin-left:10px;
+          margin-top: 10px;
+       }
+
+       .cardimg2{
+          width: 200px;
+          height: 180px;
+          margin-left:10px;
+          margin-top: 10px;
+       }
+
+       .cardimg3{
+          width: 200px;
+          height: 180px;
+          margin-left:10px;
+          margin-top: 10px;
+       }
+      
+       .item{
+        margin-top: 0px;
+        font-weight: bold;
+        font-size: 24px;
+       }
+
+       .variety{
+        color:grey ;
+        font-weight: bold;
+        font-size: 20px;
+       }
+
+       .price{
+        font-weight: bold;
+        font-size: 18px;
+        
+       }
+
+
+       .cart{
+        border-radius: 10px;
+        width:30px;
+        height: 30px;
+       }
+
+       .but1{
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+
+       .but11{
+        padding: 5px;
+        background-color: orange;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+
+       .cards1{
+        width:380px;
+        height: 280px;
+        border-radius: 13px;
+        color: #212529;
+        background-color: whitesmoke;
+        margin-top: 20px;
+       }
+
+       #totalamount{
+        font-size: 25px;
+        font-weight:bold ;
+        margin-top: 50px;
+        text-align: center;
+       }
+
+       .totalamount{
+        margin: 20px;
+         font-weight: bold;
+         font-size: 30px;
+       }
+
+       .but12{
+          text-align: center;
+          margin-left: 43%;
+          padding: 12px;
+          background-color:orange;
+          border-radius:10px;
+          color: #212529;
+          font-weight: bold;
+          font-family: 'Courgette', cursive;
+            font-family: 'Croissant One', cursive; 
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; 
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .servicecard{
+          width:400px;
+          height: 380px;
+          margin: 10px;
+        }
+
+        .cardimg12{
+          width:200px;
+          height: 180px;
+          margin-left: 90px;
+          margin-top: 20px;
+        }
+
+        .item1{
+        margin-top: 0px;
+        font-weight: bold;
+        color: orange;
+        font-size: 26px;
+        text-align: center;
+       }
+
+       .info{
+        text-align: center;
+        font-size: 17px;
+       }
+
+       .bgc{
+        text-align: center;
+        background-color: whitesmoke;
+        height:200px;
+        border-radius: 12px;
+        width:1080px;
+        margin-bottom: 120px;
+       } 
+
+       .info1{
+        font-size: 26px;
+        font-weight: bold;
+        color: #212529;
+       }
+
+       .cardrev{
+        margin: 10px;
+        width: 400px;
+        height: 350px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: white;
+        opacity: 0.9;
+        color: #212529;
+        font-weight: bold;
+       }
+
+       .card_image{
+        width:100px;
+        height:100px;
+        border-radius: 100px;
+       }
+
+       .nm{
+        font-weight: bold;
+       }
+
+       .abt{
+        display: flex;
+        flex-wrap: wrap;
+        width:1100px;
+        margin-bottom: 100px;
+       }
+
+       .abttxt{
+        text-align: center;
+       }
+
+       .abtimg{
+        width:300px;
+        height:300px
+       }
+
+       .abtcards{
+         text-align: center;
+          border-radius: 13px;
+          width:400px;
+          height: 380px;
+          margin: 5px;
+       }
+
+      .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        margin-left: 140px;
+      }
+
+      .footercards{
+        width:300px;
+        height:300px;
+        margin: 10px;
+      }
+
+      .line{
+        
+        color: white;
+        width:120px;
+      }
+
+      .footercont{
+        font-size: 18px;
+      }
+
+      .cont{
+        text-decoration: none;
+        color: grey;
+      }
+
+      .socicon:hover{
+        transform: scale(1.05);
+        transition: all 1.3s ease;
+      }
+        @media screen and (max-width:400px){
+
+          .home{
+            margin-top: 20px;
+          }
+
+          .img{
+            width:350px;
+            height: 350px;
+          }
+
+          .slogan{
+            font-size: 18px;
+          }
+
+          .slogan1{
+            font-size: 18px;
+          }
+
+          .navitext2{
+            font-size: 40px;
+          }
+
+          .homie1{
+            margin-top: 40px;
+          }
+
+          .homie2{
+            margin-left:20px;
+          }
+
+          .home_img1{
+            margin-left: 100px;
+          }
+          .homie3{
+            margin-left: 30px;
+          }
+
+          .mbt{
+            margin-bottom: 100px;
+          }
+
+          .cards{
+            margin: 10px;
+          }
+
+          .cards1{
+            margin: 10px;
+          }
+
+          .cardimg{
+            margin-left: 75px;
+          }
+
+          .bgc{
+            width:360px
+          }
+
+          .menu1{
+            margin-bottom: 0px;
+          }
+
+          .abtcards{
+            width:380px;
+          }
+
+          .footer{
+            margin-left: -100px;
+            margin-right: 100px;
+          }
+         
+        }
+
+        @media screen and (max-width:768px){
+          .home{
+            margin-top: 20px;
+          }
+
+          .home_txt{
+            margin-bottom: 40px;
+          }
+         
+          .footer{
+            margin-left: -100px;
+          }
+         
+        }
+
+        @media screen and (max-width:375px){
+        
+          .footer{
+            margin-left: -100px;
+          }
+         
+        }
+
+        @media screen and (max-width:1138px){
+         
+          .footer{
+            margin-left: 75px;
+          }
+         
+        }
+
+        @media screen and (max-width:896px){
+          .bgc{
+            width:360px
+          }
+          .footer{
+           
+            margin-right: 100px;
+          }
+        }
+
+        @media screen and (max-width:640px){
+          .bgc{
+            width:340px
+          }
+        }
+       
+
+        @media screen and (max-width:1024px){
+          .home{
+            margin-top: 80px;
+          }
+
+          .navitext2{
+            font-size: 50px;
+          }
+          .homie{
+            margin-bottom: 50px;
+          }
+
+          .footercards{
+            width:200px;
+          }
+         
+        }
+
+        @media screen and(max-width:375px){
+          .cardimg{
+            margin-left: -40px;
+          }
+        }
+
+        @media screen and(max-width:667px){
+          .cardimg{
+            margin-left: -40px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand navitext1" href="#"><h5 class="navitext1">Foodie</h5></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0 navi">
+              <li class="nav-item">
+                <a class="nav-link active navtext navitext" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navtext navitext" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active navtext navitext" aria-current="page" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navtext navitext" aria-current="page" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active navtext navitext" aria-current="page" href="#contact_us">Contact</a>
+              </li>
+            </ul>
+      </div>
+    </nav>
+    <section class="home homie1 mbt">
+      <div class="home_txt homie">
+        <h2 class="navitext2" id="#">Foodie<br>
+           Restaurant</h2>
+        <p class="slogan">For the love of delicious food</p>
+        <button class="but">Get Started</button>
+      </div>
+      <div class="home_img">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699185069/uob61z2zyzofmtuujhc7.png" class="img">
+      </div>
+    </section>
+    <section class="menu1">
+      <div class="abtcards">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699184835/sjcau780lfmp4n39rkau.png" class="img">
+      </div>
+      <div class="abtcards">
+        <h2 class="navitext3" id="about">About Us</h2>
+        <p class="navitext312">we speak the good food language</p>
+        <p class="navitext312">Join us for an unforgettable dining experience that's feast for the senses.</p>
+      </div>
+    </section>
+    <h2 class="navitext3" id="menu">Explore Menu</h2>
+    <h3 class="navitext31">Fresh taste and great price</h3>
+    <section class="menu">
+      <div class="cards">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699185132/x90trtd6xzytlmkxqjuo.png" class="cardimg1">
+        <h3 class="item">Chicken Burger</h3>
+        <p class="variety">Tasty Food</p>
+        <p class="price">$50.00</p>
+        <!--<button class="but11" onclick="increment()"><span>+</span></button>
+        <button class="but1"><img src="data:image/png;base64,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" class="cart"></button>
+        <button class="but11" onclick="decrement()"><span>-</span></button>-->
+      </div>
+      <div class="cards">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699185172/l8qi8fv2r9vlacdz3agq.png" class="cardimg2">
+        <h3 class="item">Special Beef Burger</h3>
+        <p class="variety">Tasty Food</p>
+        <p class="price">$50.00</p>
+        <!--<button class="but11" onclick="increment()"><span>+</span></button>
+        <button class="but1"><img src="data:image/png;base64,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" class="cart"></button>
+        <button class="but11" onclick="decrement()"><span>-</span></button> -->    
+      </div>
+      <div class="cards">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699185231/lngxdgocmgcbxv8beakg.png" class="cardimg3">
+        <h3 class="item">Chicken Fry Pack</h3>
+        <p class="variety">Tasty Food</p>
+        <p class="price">$50.00</p>
+        <!--<button class="but11" onclick="increment()"><span>+</span></button>
+        <button class="but1"><img src="data:image/png;base64,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" class="cart"></button>
+        <button class="but11"  onclick="decrement()"><span>-</span></button>-->    
+      </div>
+     <!-- <div class="cards1">
+
+        <h3 class="totalamount">Total Amount:</h3>
+        <p id="totalamount">$0.00</p>
+        <button class="but12" id="clear">Clear</button>
+      </div>-->
+    </section>
+    <h2 class="navitext3" id="service">Services</h2>
+    <h3 class="navitext31">we provide best quality food</h3>
+    <section class="menu">
+      <div class="servicecard">
+       <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699184919/v8grcgtmvky7ru8jpufz.png" class="cardimg12">
+       <h3 class="item1">Order</h3>
+       <p class="info">Select the desired product, and proceed to the checkout. Provide your shipping and payment information to complete the order.
+      </p>
+      </div>
+      <div class="servicecard">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699184972/poasmtjuxpytdyc3fyf5.png" class="cardimg12">
+        <h3 class="item1">Shipping</h3>
+        <p class="info">Shipping is the process of transporting goods from one location to another, typically from the seller to the buyer.</p>
+      </div>
+      <div class="servicecard">
+        <img src="https://res.cloudinary.com/dudu5p1pv/image/upload/v1699185018/wy6jaskxihhbvqvoabuh.png" class="cardimg12">
+        <h3 class="item1">Delivered</h3>
+        <p class="info">When an item is delivered, means it has reached its destination and is now in the possession of the recipient.</p>
+      </div>
+    </section>
+    <div class="container bgc" id="contact_us">
+      <p class="info1">We make quality food</p>
+      <p class="info1">Everyday</p>
+      <button class="but">Let's Talk</button>
+    </div>
+    <div class="footer">
+      <div class="footercards">
+        <p class="footercont">Menu Links</p>
+        <hr class="line">
+        <p><a href="#" class="cont">Home</a></p>
+        <p><a href="#about" class="cont">About</a></p>
+        <p><a href="#menu" class="cont">Menu</a></p>
+        <p><a href="#service" class="cont">Service</a></p>
+        <p><a href="#contact_us" class="cont">Contact</a></p>
+      </div>
+      <div class="footercards">
+        <p class="footercont">Our Service</p>
+        <hr class="line">
+        <p class="cont">Web Design</p>
+        <p class="cont">Web Development</p>
+      </div>
+      <div class="footercards">
+        <p class="footercont">Information</p>
+        <hr class="line">
+        <p class="cont">About Us</p>
+        <p class="cont">Delivery Information</p>
+        <p class="cont">Privacy Policy</p>
+        <p class="cont">About Us</p>
+        <p class="cont">Terms & Conditions</p>
+      </div>
+      <div class="footercards">
+        <p class="footercont">Contact Us</p>
+        <hr class="line">
+        <i class="fa-brands fa-linkedin fa-2x yolo"></i>
+        <i class="fa-brands fa-square-instagram  fa-2x yolo"></i>
+        <i class="fa-brands fa-facebook fa-2x yolo"></i>
+        <i class="fa-brands fa-whatsapp fa-2x yolo"></i>
+      </div>
+    </div>
+   <!--<script src="restaurantbill.js"></script>-->
+</body>
+</html>
